@@ -327,17 +327,6 @@ p {
   padding-left: 1rem;
 }
 
-.experience li::before {
-  content: "";
-  position: absolute;
-  left: -12px;
-  top: 5px;
-  width: 14px;
-  height: 14px;
-  background: var(--ACCENT);
-  border-radius: 50%;
-}
-
 .experience strong {
   color: var(--HEADING);
 }
