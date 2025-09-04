@@ -222,15 +222,6 @@ p {
   color: var(--TEXT);
 }
 
-/* Main section styling */
-.main-content {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  min-height: 100vh;
-  padding: 5% 10%;
-}
-
 .cta-btn {
   padding: 0.8rem 1.5rem;
   background: var(--ACCENT);
@@ -459,11 +450,6 @@ p {
     display: flex;
     animation: showMenu 0.3s ease forwards;
     transform-origin: top center;
-  }
-
-  .main-content {
-    flex-direction: column;
-    padding: 2rem;
   }
 
   @keyframes showMenu {
