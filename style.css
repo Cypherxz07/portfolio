@@ -499,57 +499,34 @@ p {
   }
 }
 
-/* === MOBILE & TABLET OVERRIDES === */
-@media (max-width: 1024px) {
-
-  /* Tablet and smaller */
+/* Tablet styles */
+@media (max-width: 1024px) and (min-width: 769px) {
   .hero {
-    padding: 4% 5%;
-    text-align: center;
+    padding: 4% 6%;
   }
 
   .hero-content h1 {
-    font-size: clamp(2rem, 5vw, 2.5rem);
+    font-size: 2.4rem;
   }
 
   .hero-content p {
-    font-size: clamp(1rem, 2.5vw, 1.1rem);
+    font-size: 1.1rem;
   }
 
   .about,
   .projects,
   .experience,
   .contact {
-    padding: 3% 5%;
+    padding: 4% 6%;
   }
 
-  .about h2,
-  .projects h2,
-  .experience h2,
-  .contact h2 {
-    font-size: clamp(1.6rem, 4vw, 2rem);
-  }
-
-  .about p,
-  .projects p,
-  .experience p,
-  .contact p {
-    font-size: clamp(1rem, 2.5vw, 1.1rem);
-  }
-
+  /* Make project cards 2 per row on tablets */
   .project-grid {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  .contact-form input,
-  .contact-form textarea {
-    font-size: 1rem;
-    padding: 0.7rem 0.9rem;
-  }
-
-  .cta-btn {
-    padding: 0.7rem 1.2rem;
-    font-size: 0.95rem;
+  /* Navbar adjustments */
+  .nav-links {
+    gap: 1rem;
   }
 }
