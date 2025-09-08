@@ -49,3 +49,19 @@ document.addEventListener("DOMContentLoaded", () => {
         moonIcon.style.display = "block";
     }
 });
+
+function forceDesktopViewport() {
+    let meta = document.querySelector("meta[name=viewport]");
+    if (!meta) {
+        meta = document.createElement("meta");
+        meta.name = "viewport";
+        document.head.appendChild(meta);
+    }
+    meta.content = "width=1200";
+}
+
+// Example: run if width is in the “fake desktop” range
+if (window.innerWidth >= 769 && window.innerWidth <= 1024) {
+    forceDesktopViewport();
+}
+
