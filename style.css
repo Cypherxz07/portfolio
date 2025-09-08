@@ -580,32 +580,46 @@ p {
   }
 }
 
-/* Tablet (includes Request Desktop on phones ~980px) */
+/* === Handle Request Desktop Mode on Mobile (769px–1024px) === */
 @media (min-width: 769px) and (max-width: 1024px) {
-
-  /* Fix section heights */
-  .hero,
-  .about,
-  .projects,
-  .experience,
-  .contact {
-    padding: 4rem 6%;
+  body {
+    font-size: 90%;
+    /* shrink text so it doesn't look oversized */
+    line-height: 1.4;
   }
 
-  /* Scale text properly */
-  h1,
-  h2,
-  h3 {
-    font-size: clamp(1.4rem, 2.5vw, 2rem);
+  section {
+    min-height: 100vh;
+    /* each section fills the viewport like desktop */
+    padding: 4rem 2rem;
   }
 
-  p {
-    font-size: clamp(0.9rem, 2vw, 1rem);
+  .hero-content h1 {
+    font-size: 2.2rem;
   }
 
-  /* Project grid: 2 columns instead of squeezing into 3+ */
+  .hero-content p {
+    font-size: 1.1rem;
+  }
+
   .project-grid {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
+    /* 2 columns instead of 1 squeezed */
     gap: 1.5rem;
+  }
+
+  .project-card {
+    padding: 1.5rem;
+  }
+
+  .experience ul li {
+    margin-bottom: 1.2rem;
+    font-size: 1rem;
+  }
+
+  .contact-form {
+    max-width: 600px;
+    margin: auto;
   }
 }
