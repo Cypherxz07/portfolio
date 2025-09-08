@@ -588,10 +588,16 @@ p {
     line-height: 1.4;
   }
 
-  section {
-    min-height: 100vh;
-    /* each section fills the viewport like desktop */
-    padding: 4rem 2rem;
+  .hero {
+    height: 70vh;
+  }
+
+  .about {
+    height: 60vh;
+  }
+
+  .experience {
+    height: 60vh;
   }
 
   .hero-content h1 {
