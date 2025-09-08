@@ -417,7 +417,7 @@ p {
   color: #cccccc;
 }
 
-/* === RESPONSIVE NAVIGATION === */
+/* === RESPONSIVE NAVIGATION & MOBILE STYLES === */
 @media (max-width: 768px) {
   .menu-button {
     display: flex;
@@ -437,7 +437,6 @@ p {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   }
 
-  /* Mobile only */
   .hero {
     padding: 3% 4%;
   }
