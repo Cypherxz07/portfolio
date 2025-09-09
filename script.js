@@ -50,18 +50,24 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
-function forceDesktopViewport() {
-    let meta = document.querySelector("meta[name=viewport]");
-    if (!meta) {
-        meta = document.createElement("meta");
-        meta.name = "viewport";
-        document.head.appendChild(meta);
-    }
-    meta.content = "width=1200";
-}
+// Select all fade-in elements
+const faders = document.querySelectorAll('.fade-in');
 
-// Example: run if width is in the “fake desktop” range
-if (window.innerWidth >= 769 && window.innerWidth <= 1024) {
-    forceDesktopViewport();
-}
+const appearOptions = {
+    threshold: 0.2, // 20% visible triggers the animation
+};
+
+const appearOnScroll = new IntersectionObserver(function (entries) {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");  // Fade in
+        } else {
+            entry.target.classList.remove("show"); // Reset when out of view
+        }
+    });
+}, appearOptions);
+
+faders.forEach(fader => {
+    appearOnScroll.observe(fader);
+});
 
