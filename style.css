@@ -201,8 +201,7 @@ p {
   justify-content: center;
   align-items: center;
   text-align: center;
-  min-height: 100vh;
-  padding: 5% 5%;
+  padding: 12rem 5%;
   background: linear-gradient(to right, var(--SECTION-BG), var(--BG));
 }
 
@@ -532,8 +531,7 @@ p {
   }
 
   .hero {
-    padding: 3% 4%;
-    min-height: 60vh;
+    padding: 10rem 4%;
   }
 
   .hero-content h1 {
@@ -651,7 +649,6 @@ p {
   .projects,
   .experience,
   .contact {
-    min-height: 60vh;
     padding: 4rem 5vw;
   }
 
