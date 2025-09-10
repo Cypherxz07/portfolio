@@ -533,6 +533,7 @@ p {
 
   .hero {
     padding: 3% 4%;
+    min-height: 60vh;
   }
 
   .hero-content h1 {
@@ -645,16 +646,13 @@ p {
     line-height: 1.4;
   }
 
-  .hero {
-    height: 70vh;
-  }
-
-  .about {
-    height: 60vh;
-  }
-
-  .experience {
-    height: 60vh;
+  .hero,
+  .about,
+  .projects,
+  .experience,
+  .contact {
+    min-height: 60vh;
+    padding: 4rem 5vw;
   }
 
   .hero-content h1 {
