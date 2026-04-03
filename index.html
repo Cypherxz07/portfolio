@@ -4,9 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio of Abubakar Shamsudeen - Mechatronics Engineering Student, Robotics Enthusiast, and Web3 QA Tester. Featuring projects in robotics, web development, and embedded systems.">
+    <meta name="keywords"
+        content="Abubakar Shamsudeen, Portfolio, Mechatronics, Robotics, Web Development, QA Testing, Web3">
+    <meta name="author" content="Abubakar Shamsudeen">
+    <meta name="theme-color" content="#0013e0">
+
+    <!-- Open Graph Tags for Social Sharing -->
+    <meta property="og:title" content="Abubakar Shamsudeen - Portfolio">
+    <meta property="og:description" content="Mechatronics Engineering Student | Robotics | Web3 QA Tester">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://your-portfolio-url.com">
+
     <title>Abubakar Shamsudeen - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="image/favicon.png" type="image/x-icon" sizes="64x64">
+
+    <!-- JSON-LD Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Abubakar Shamsudeen",
+        "jobTitle": "Mechatronics Engineering Student",
+        "description": "Mechatronics Engineering Student, Robotics Enthusiast, and Web3 QA Tester",
+        "url": "https://your-portfolio-url.com",
+        "sameAs": [
+            "https://github.com/Cypherxz07",
+            "https://twitter.com/Isahbless79",
+            "https://www.linkedin.com/in/shamsudeen-abubakar-8041a8330/"
+        ]
+    }
+    </script>
 </head>
 
 <body class="dark-mode">
@@ -65,7 +97,7 @@
         <div class="hero-content">
             <h1>Abubakar Shamsudeen</h1>
             <p>Mechatronics Engineering Student | Robotics | Web3 QA Tester</p>
-            <a href="Resume.pdf" class="cta-btn" download>Download Resume</a>
+            <a href="Resume_Revised.pdf" class="cta-btn" download>Download Resume</a>
         </div>
     </header>
 
@@ -85,24 +117,26 @@
                 <div class="project-card">
                     <h3>String Analyzer</h3>
                     <p>A simple web app that analyzes text input for length, characters, and other insights.</p>
-                    <a href="https://strings-analyzer.vercel.app/" target="_blank">Live Demo</a>
-                    <a href="https://github.com/Cypherxz07/string-analyzer" target="_blank"
+                    <a href="https://strings-analyzer.vercel.app/" target="_blank" rel="noopener noreferrer">Live
+                        Demo</a>
+                    <a href="https://github.com/Cypherxz07/string-analyzer" target="_blank" rel="noopener noreferrer"
                         style="margin-left: 1rem;">Source Code</a>
                 </div>
                 <div class="project-card">
                     <h3>Weather App</h3>
                     <p>A simple weather app that fetches real-time weather data using an API. Built with HTML, CSS, and
                         JavaScript.</p>
-                    <a href="https://weather-apps-demo.vercel.app/" target="_blank">Live Demo</a>
+                    <a href="https://weather-apps-demo.vercel.app/" target="_blank" rel="noopener noreferrer">Live
+                        Demo</a>
                     <a href="https://github.com/Cypherxz07/practice-exercises/tree/main/Weather%20application"
-                        target="_blank" style="margin-left: 1rem;">Source Code</a>
+                        target="_blank" rel="noopener noreferrer" style="margin-left: 1rem;">Source Code</a>
                 </div>
 
                 <div class="project-card">
                     <h3>ESP32 Robotic Car & Arm</h3>
                     <p>Built and programmed robotic car and arm using ESP32 and sensors, controlled via Bluetooth.</p>
                     <a href="https://www.linkedin.com/posts/shamsudeen-abubakar-8041a8330_engineering-iot-robotics-activity-7335627619326963712-Xfku?utm_source=share&utm_medium=member_android&rcm=ACoAAFNScIQBU8rsSQvvREigNVGO0a34WsTHGBM"
-                        target="_blank">View
+                        target="_blank" rel="noopener noreferrer">View
                         Project</a>
                 </div>
             </div>
@@ -131,8 +165,12 @@
             </form>
 
             <div class="social-links">
-                <a href="https://twitter.com/Isahbless79" target="_blank">Twitter</a> |
-                <a href="https://www.linkedin.com/in/shamsudeen-abubakar-8041a8330/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/Cypherxz07" target="_blank" rel="noopener noreferrer"
+                    aria-label="GitHub">GitHub</a> |
+                <a href="https://twitter.com/Isahbless79" target="_blank" rel="noopener noreferrer"
+                    aria-label="Twitter">Twitter</a> |
+                <a href="https://www.linkedin.com/in/shamsudeen-abubakar-8041a8330/" target="_blank"
+                    rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
             </div>
         </section>
 
@@ -151,6 +189,6 @@
     </footer>
 
 </body>
-<script src="script.js"></script>
+<script src="script.js" defer></script>
 
 </html>
