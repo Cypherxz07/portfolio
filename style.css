@@ -85,6 +85,8 @@ textarea {
   display: flex;
   gap: 1.35rem;
   margin-left: 1.5rem;
+  list-style: none; /* This removes the bullets */
+  padding: 0;       /* This removes the default indentation */
 }
 
 .nav-links li a {
