@@ -229,6 +229,24 @@ textarea {
   color: #dce5ff;
 }
 
+.hero-metrics article {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  padding: 0.8rem;
+  background: rgba(0, 0, 0, 0.18);
+}
+
+.hero-metrics article.high-contrast h3 {
+  color: #ffffff;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.hero-metrics article.high-contrast p {
+  color: #f6f9ff;
+  font-weight: 600;
+}
+
 .section {
   padding: 5rem 0;
   background: var(--section);
@@ -537,22 +555,23 @@ textarea {
   .hero h1 {
     font-size: 2rem;
   }
-}
 
-flex-direction: column;
-gap: 0.75rem;
-background: var(--ACCENT);
-position: absolute;
-top: 64px;
-left: 0;
-width: 100%;
-padding: 1rem 2rem;
-border-radius: 0;
-box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-}
+  .nav-links {
+    flex-direction: column;
+    gap: 0.75rem;
+    background: var(--accent);
+    position: absolute;
+    top: 64px;
+    left: 0;
+    width: 100%;
+    padding: 1rem 2rem;
+    border-radius: 0;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
 
-.hero {
-  padding: 10rem 4%;
+  .hero {
+    padding: 10rem 4%;
+  }
 }
 
 .hero-content h1 {
@@ -654,7 +673,6 @@ box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 
 .experience li::before {
   content: none;
-}
 }
 
 /* === Handle Request Desktop Mode on Mobile (769px–1024px) === */
