@@ -35,6 +35,7 @@ body {
   font-family: "Roboto", sans-serif;
   background: radial-gradient(circle at 15% 10%, #eaf4ff 0%, #f5f9ff 42%, var(--bg) 100%);
   color: var(--text);
+  overflow-wrap: break-word;
 }
 
 .container {
@@ -115,11 +116,23 @@ textarea {
 
 .hamburger-bar {
   display: block;
-  width: 18px;
+  width: 24px;
   height: 2px;
   background: currentColor;
   margin: 4px auto;
-  transition: transform 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+.menu-button.active .hamburger-bar:nth-child(1) {
+  transform: rotate(45deg) translate(7px, 7px);
+}
+
+.menu-button.active .hamburger-bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-button.active .hamburger-bar:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
 }
 
 .theme-toggle {
@@ -514,24 +527,22 @@ textarea {
   }
 
   .nav-links {
+    display: none;
     position: absolute;
-    inset: 68px 0 0;
+    top: 68px;
+    left: 0;
+    width: 100%;
     flex-direction: column;
     align-items: center;
     background: var(--card);
     padding: 1rem 0;
     border-top: 1px solid var(--border);
-    clip-path: inset(0 0 100% 0);
-    transition: clip-path 0.3s ease;
-    overflow: hidden;
-    opacity: 0;
-    pointer-events: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
   }
 
   .nav-links.active {
-    clip-path: inset(0);
-    opacity: 1;
-    pointer-events: auto;
+    display: flex;
   }
 
   .nav-links li {
@@ -542,6 +553,7 @@ textarea {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
   }
 
   .hero-metrics {
@@ -560,58 +572,28 @@ textarea {
     font-size: 2rem;
   }
 
-  .nav-links {
-    flex-direction: column;
-    gap: 0.75rem;
-    background: var(--accent);
-    position: absolute;
-    top: 64px;
-    left: 0;
-    width: 100%;
-    padding: 1rem 2rem;
-    border-radius: 0;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-  }
-
   .hero {
     padding: 10rem 4%;
   }
-}
 
-.hero-content h1 {
-  font-size: 2rem;
-}
-
-.hero-content p {
-  font-size: 1rem;
-}
-
-.about,
-.projects,
-.experience,
-.contact {
-  padding: 4rem 1.5rem;
-}
-
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-}
-
-.nav-links.active {
-  display: flex;
-  animation: showMenu 0.3s ease forwards;
-  transform-origin: top center;
-}
-
-@keyframes showMenu {
-  0% {
-    transform: scaleY(0);
+  .hero-content h1 {
+    font-size: 2rem;
   }
 
-  100% {
-    transform: scaleY(1);
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .about,
+  .projects,
+  .experience,
+  .contact {
+    padding: 4rem 1.5rem;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
   }
 }
 
